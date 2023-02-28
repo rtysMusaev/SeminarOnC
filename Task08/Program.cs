@@ -10,11 +10,11 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 if (number > 0)
 {
-  int count = number;
+  int count = 2;
   while (count <= number)
   {
     Console.Write(count + " ");
-    count = count + 1;
+    count = count + 2;
   }
 
 }
