@@ -4,26 +4,16 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-Console.Write("Введите трехзначное число: ");
 
-int number = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введи число: ");
 
-if (number > 999)
- {
-   int numberThree = ThreeDigit(number);
-   Console.Write($"Последняя цифра числа -> {number}");
- }
-else 
-{
-   Console.Write("Третьей цифры нет");
+int anyNumber = Convert.ToInt32(Console.ReadLine());
+
+string anyNumberText = Convert.ToString(anyNumber);
+
+if (anyNumberText.Length > 2){
+  Console.WriteLine("третья цифра -> " + anyNumberText[2]);
 }
-int ThreeDigit(int num)
-{
-    
-   while (num > 999)
-    {
-        int num1 = num / 10;
-    }
-    int three = num % 10;
-    return three;
+else {
+  Console.WriteLine("-> третьей цифры нет");
 }
