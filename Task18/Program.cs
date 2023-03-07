@@ -5,7 +5,9 @@
 
 Console.WriteLine($"Введите номер четверти");
 string numQuarter = Console.ReadLine();
+
 Console.WriteLine(Range(numQuarter));
+
 string Range(string num)
 {
     if (num == "1") return "x > 0, y > 0";
