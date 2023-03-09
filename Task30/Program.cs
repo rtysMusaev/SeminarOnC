@@ -21,7 +21,7 @@ void PrintArray(int[] collection)
 }
 
 
-    void FillArray(int[] collection)
+ void FillArray(int[] collection)
 {
     
     
