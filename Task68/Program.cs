@@ -12,19 +12,10 @@ Console.WriteLine($"m = {argumentA}, n = {argumentB} -> {res}");
 
 int FunctionAkkermana(int a, int b)
 {
-    if (a == 0)
-    {
-        return b + 1;
-    }
+    if (a == 0) return b + 1;
     else
     {
-        if (b == 0)
-        {
-            return FunctionAkkermana(a - 1, 1);
-        }
-        else
-        {
-            return FunctionAkkermana(a - 1, FunctionAkkermana(a, b - 1));
-        }
+        if (b == 0) return FunctionAkkermana(a - 1, 1);
+        else return FunctionAkkermana(a - 1, FunctionAkkermana(a, b - 1));
     }
 }
